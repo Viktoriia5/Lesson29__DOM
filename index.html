@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <h2>Playlist ex</h2>
+    <button onclick="printPlaylist()">print playlist</button>
+    <div id="songsContainer"></div>
+
+    <h2>Modal window ex</h2>
+    <button onclick="openModal()">Open</button>
+    <div class="modal hide">
+      <div class="modal__content">
+        <div onclick="closeModal()" class="modal__close"></div>
+        <div class="modal__text">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus,
+          magnam? Autem illum in enim eum quae. Reprehenderit consequuntur
+          exercitationem ipsa hic architecto sint aspernatur officia provident,
+          vel officiis culpa corrupti.
+        </div>
+      </div>
+    </div>
+
+    <h2>Traffic light ex</h2>
+    <hr />
+
+    <div class="trafficLight">
+      <div class="light red active"></div>
+      <div class="light yellow"></div>
+      <div class="light green"></div>
+
+      <button onclick="switchLight()">switch</button>
+    </div>
+
+    <h2>Text toggle ex</h2>
+    <hr />
+
+    <div>
+      <button onclick="toggleText()">show text</button>
+      <div class="text">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus
+        enim numquam veritatis natus dignissimos, temporibus minus nostrum, nisi
+        nemo est corporis laborum consequuntur sequi reiciendis sed, ad
+        laudantium neque illo?
+      </div>
+    </div>
+
+    <h2>Tabs ex</h2>
+    <hr />
+
+    <div class="tabed-block">
+      <div class="tabs">
+        <button onclick="switchTab(1)" class="tabs__tab active">Tab 1</button>
+        <button onclick="switchTab(2)" class="tabs__tab">Tab 2</button>
+        <button onclick="switchTab(3)" class="tabs__tab">Tab 3</button>
+      </div>
+      <div class="content">
+        <div class="content__item active">
+          Tab 1 content Tab 1 content Tab 1 content Tab 1 content Tab 1 content
+          Tab 1 content Tab 1 content Tab 1 content Tab 1 content Tab 1 content
+          Tab 1 content Tab 1 content Tab 1 content Tab 1 content Tab 1 content
+          Tab 1 content
+        </div>
+        <div class="content__item">
+          Tab 2 content Tab 2 content Tab 2 content Tab 2 content Tab 2 content
+          Tab 2 content Tab 2 content Tab 2 content Tab 2 content Tab 2 content
+          Tab 2 content Tab 2 content
+        </div>
+        <div class="content__item">
+          Tab 3 content Tab 3 content Tab 3 content Tab 3 content Tab 3 content
+          Tab 3 content Tab 3 content Tab 3 content
+        </div>
+      </div>
+    </div>
+
+    <h2>Progress bar ex</h2>
+    <hr />
+
+    <button onclick="addProgress()">load</button>
+    <div class="progress-bar">
+      <div class="progress-bar__status"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
